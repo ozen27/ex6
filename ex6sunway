@@ -1,0 +1,111 @@
+def question_1():
+    my_list = []
+    count = 1
+
+    while count <= 5:
+        num = float(input("Enter a number: "))
+        my_list.append(num)
+        count += 1
+
+    my_list.sort()   
+    print(f"my_list = {my_list}") 
+'''question_1()'''
+
+def question_2():
+    my_list = []
+    count = 1
+    total = 0 
+
+    while count <= 5:
+        num = float(input("Enter a number: "))
+        my_list.append(num)
+        total += num
+        count += 1
+
+    my_list.sort()
+    print(f"my_list = {my_list}") 
+    print(f"Total = {total}") 
+    print(f"Average = {total/5}")     
+'''question_2()'''
+
+def question_3():
+    forward_list = []
+    reverse_list = []
+    count = 0
+    max_loop = 5
+
+    while count < max_loop:
+        num = float(input("Enter a number: "))
+        forward_list.append(num)
+        count += 1
+
+    forward_list.sort()  
+    print(f"forward_list = {forward_list}")
+
+    count = max_loop - 1
+    while count >= 0:
+        reverse_list.append(forward_list[count])
+        count -= 1
+
+    print(f"reverse_list = {reverse_list}") 
+'''question_3()'''
+
+def question_4():
+    my_list = []
+    count = 1
+    max_loop = 5
+
+    while count <= max_loop:
+        num = float(input("Enter a number: "))
+        my_list.append(num)
+        count += 1
+
+    my_list.sort()   
+    print(f"my_list = {my_list}")
+
+    count = max_loop - 1
+    while count >= 0:
+        del my_list[count]
+        print(f"my_list = {my_list}")
+        count -= 1
+    
+'''question_4()'''
+
+def question_5():
+    my_list = []
+    count = 1
+    max_loop = 5
+
+    while count <= max_loop:
+        data = input("Enter a data: ")
+        my_list.append(data)
+        count += 1
+
+    print(f"my_list : {my_list}")    
+
+    count = max_loop - 1
+    while count >= 0:
+        del my_list[count]
+        print(f"my_list = {my_list}")
+        count -= 1
+
+'''question_5()'''
+
+def question_6():
+    my_list = []
+    count = 1
+    max_loop = 5
+
+    while count <= max_loop:
+        data = input("Enter a data: ")
+        my_list.append(data)
+        count += 1
+
+    print(f"my_list : {my_list}")    
+
+    count = max_loop - 1
+    while count >= 0:
+        del my_list[count]
+        print(f"my_list = {my_list}")
+        count -= 2
+'''question_6()'''        
