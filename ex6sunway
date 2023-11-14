@@ -105,7 +105,8 @@ def question_6():
 
     count = max_loop - 1
     while count >= 0:
-        del my_list[count]
-        print(f"my_list = {my_list}")
-        count -= 2
-'''question_6()'''        
+        if count % 2 == 0:
+            del my_list[count]
+            print(f"my_list = {my_list}")
+        count -= 1 
+'''question_6()'''     
